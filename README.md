@@ -220,7 +220,6 @@ This invokes the `get_shipment_status` function directly, simulating a slow REST
   - `node_d_reconcile` fuzzy matching behavior
   - safe handling of `contains_pii` and non-speculative branches
 - Add a `LICENSE` file if not already present
-- Add `CONTRIBUTING.md` / usage examples / simple run instructions
 - Add CI to verify `python -m py_compile` and benchmark smoke tests
 - Document required Python version precisely (the repo currently runs on Python 3.14 with the current qdrant client APIs)
 
@@ -256,24 +255,3 @@ async-rag-accelerator is intentionally tool-agnostic. To integrate your own exte
    ```
 
 No other changes are required. The Qdrant caching, parallel DAG execution, and reconciliation logic are fully generic.
-
----
-
-## Citation
-
-If you use async-rag-accelerator in your research, please cite:
-
-```bibtex
-@misc{specboot2026,
-  title   = {async-rag-accelerator: Speculative Execution for Generic High-Latency APIs in Agentic Systems},
-  author  = {Manoj Kumar Marabattina},
-  year    = {2026},
-  url     = {https://zenodo.org/records/21327267}
-}
-```
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
