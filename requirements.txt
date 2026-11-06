@@ -1,0 +1,11 @@
+python-dotenv
+langgraph
+fastmcp
+qdrant-client
+langchain-community
+langchain-core
+pandas
+matplotlib
+seaborn
+tqdm
+xxhash
