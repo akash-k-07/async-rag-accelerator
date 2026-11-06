@@ -1,4 +1,4 @@
-# Spec-RAG
+# async-rag-accelerator
 
 ## Speculative Execution Framework for Generic High-Latency APIs
 
@@ -15,7 +15,7 @@
 
 Agentic systems backed by Retrieval-Augmented Generation (RAG) suffer from a fundamental sequential bottleneck: external tool calls (REST APIs, SQL databases, GraphQL endpoints, legacy systems) must resolve before LLM token generation can begin. At production scale, a single 3-second API call imposes that wall-clock cost on every single query.
 
-**Spec-RAG** eliminates this bottleneck by speculatively executing the LLM generation step in parallel with the external tool call, using responses cached from prior identical tool invocations. It achieves this through a four-node parallel Directed Acyclic Graph (DAG) orchestrated by [LangGraph](https://github.com/langchain-ai/langgraph), with [Qdrant](https://qdrant.tech/) serving as a high-speed semantic vector cache keyed on generic tool signatures (`tool_name` + `tool_payload`).
+**async-rag-accelerator** eliminates this bottleneck by speculatively executing the LLM generation step in parallel with the external tool call, using responses cached from prior identical tool invocations. It achieves this through a four-node parallel Directed Acyclic Graph (DAG) orchestrated by [LangGraph](https://github.com/langchain-ai/langgraph), with [Qdrant](https://qdrant.tech/) serving as a high-speed semantic vector cache keyed on generic tool signatures (`tool_name` + `tool_payload`).
 
 At an 80% cache hit rate, empirical benchmarks show a **>1.8× mean speedup** over sequential baselines, with tail latency (P95) reductions exceeding 40%.
 
