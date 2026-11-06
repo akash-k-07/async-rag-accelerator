@@ -5,7 +5,6 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776ab?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-DAG%20Orchestration-1f6feb?style=flat-square)](https://github.com/langchain-ai/langgraph)
 [![Qdrant](https://img.shields.io/badge/Qdrant-Vector%20Cache-dc244c?style=flat-square)](https://qdrant.tech/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![arXiv](https://img.shields.io/badge/arXiv-Preprint-b31b1b?style=flat-square)](https://arxiv.org/)
 
 *A latency-masking middleware that makes any slow external data source feel instant — without changing your API.*
